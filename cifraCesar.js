@@ -23,7 +23,7 @@ function encript() {
     
     keyCurrent = keyEnter;
     document.getElementById("response").innerHTML = "";
-    document.getElementById("response").innerHTML = keyEnter;
+    document.getElementById("response").innerHTML = keyEnter.join("");
     document.getElementById("key").value = ""; 
     keyEnter = [];  
 }
@@ -43,6 +43,6 @@ function decript() {
         }
     }
     document.getElementById("response").innerHTML = "";
-    document.getElementById("response").innerHTML = keyCurrentDecript;
+    document.getElementById("response").innerHTML = keyCurrentDecript.join("");
     keyCurrentDecript = [];   
 }
